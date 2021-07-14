@@ -1,5 +1,5 @@
 # codepen-hide-box
-For beginers, a good challenge ton train is to go on codepen.io and hiding one of the box and then recreating the missing part.
+For beginers, a good challenge to train is to go on codepen.io and hiding one of the box and then recreating the missing part.
 
 I want to create a small chrome extension that allows you to hide the CSS box or the HTML box on http://codepen.io
 Once the box is hidden, we can decide to show it again or show it again but with the content remove so you can start recreating the content of the box without seing any code line of the solution. 
