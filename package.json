@@ -1,0 +1,23 @@
+{
+  "name": "tech-is-lava-extension",
+  "version": "0.1.0",
+  "description": "tech-is-lava-extension",
+  "main": "popup.js",
+  "scripts": {
+    "lint": "./node_modules/.bin/eslint popup.js --fix",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bdebon/codepen-hide-box"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bdebon/codepen-hide-box"
+  },
+  "homepage": "https://github.com/bdebon/codepen-hide-box#readme",
+  "devDependencies": {
+    "eslint": "^7.23.0"
+  }
+}

@@ -1,0 +1,33 @@
+#box-css {
+    position: relative;
+}
+
+.box {
+    visibility: hidden;
+}
+
+.loaded .box {
+    visibility: visible;
+}
+
+.box.hidden:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 100;
+    background-image: url("chrome-extension://__MSG_@@extension_id__/images/lava-tile.jpeg");
+    animation: lavaTranslation infinite linear 50s;
+}
+
+@keyframes lavaTranslation {
+    0% {
+        background-position-y: 0;
+    }
+
+    100% {
+        background-position-y: 256px;
+    }
+}

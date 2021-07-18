@@ -1,0 +1,124 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+  --grey: #A7A3C2;
+  --grey-light: #D5CEEA;
+  --grey-lighter: #F8F5FF;
+  --black: #2A2C40;
+  --main :#6116FF ;
+
+  --btnColor: #6116FF;
+  --btnBorder: #24008C;
+  --bg: #FFFFFF;            /* Dark/Light Mode : */
+  --btnBg: #F8F5FF;         /* These custom properties are the colors that change */
+  --formText: #000000;      /* when we switch from one mode to another */
+  --headerColor : #161827;  /* we binded some JS to them to facilitate the switch */
+}
+
+body {
+    font-family: 'Epilogue', sans-serif;
+}
+
+main {
+    padding: 16px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 24px;
+    color: var(--headerColor);
+}
+
+h1 strong {
+    color: #c7100c;
+}
+
+p {
+    margin-bottom: 12px;
+}
+
+.py-technos {
+    margin-bottom: 30px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.py-technos > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.py-technos > div .py-title {
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+
+.py-technos > div label {
+    display: flex;
+    align-items: center;
+}
+
+.py-technos > div label input {
+    visibility: hidden;
+    position: absolute;
+}
+
+.py-technos > div label .eye {
+    margin-right: 8px;
+    color: var(--grey);
+    opacity: .8;
+}
+
+.py-technos > div label .eye:hover {
+    opacity: 1;
+}
+
+.py-technos > div label input ~ .hide {
+    display: none;
+}
+
+.py-technos > div label input:checked ~ .hide {
+    display: block;
+}
+
+.py-technos > div label input:checked ~ .show {
+    display: none;
+}
+
+.py-technos > div svg {
+    cursor: pointer;
+}
+
+.fas, .fa, .far {
+    cursor: pointer;
+}
+
+.fa-trash-alt {
+    color: #c7100c6b;
+}
+
+.fa-trash-alt:hover {
+    color: rgba(199, 16, 12, 0.74);
+}
+
+.py-actions {
+    display: flex;
+    align-items: center;
+}
+
+.py-footer {
+    text-align: center;
+    font-size: 11px;
+    color: var(--grey);
+}
+
+.py-footer a {
+    color: var(--headerColor);
+}
